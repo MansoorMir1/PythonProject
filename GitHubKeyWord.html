@@ -1,0 +1,113 @@
+<!--
+#              Git and GitHub
+        Git
+i.  Git is a version control system. It is a tool that help to track changes in codes. 
+ii. It is a very popular.
+iii. It is Free and Open Source.
+iv. It is Fast and Scalable.
+             #######
+        GitHub
+i. GitHub is a website that allows developer to store and manage their code using Git.
+             ######################
+
+ #       Configuring Git (In which account we change)
+
+1. git config --global user.name 'My name'
+2. git config --global user.email 'Email address'
+3. git config --list
+
+            #########################
+
+#          Basic Command
+##         Clone and status
+1. Clone: Clononig a repositry on a local machine
+          git clone <project link>
+2. Status: Display the state of code 
+          git status
+
+          #######
+
+##          To show Files in directory
+1. ls : It stand for list files. It show only files which are show in root directory. 
+            #####
+2. ls -a : it show all hiden files and which are shown in directory.
+           
+            ###########################
+
+##          Files should be 
+1. untracked: new files that git does not yet track.
+2. modified: changed files.
+3. staged: files is ready to be commited.
+4. unmodified: unchanged files.
+           
+           ##########################
+
+##          Add and Commit
+1. add: adds new or changed files in your working directory to Git staging area.
+        git add <- file name ->
+2. commit: It is the record of change.
+           git commit -m "some message"
+ 
+          #############################
+
+##           Push Command
+push -upload local repository content to remote repository
+            git push origin main
+        
+            #################################
+
+##           Init Command
+init - used to create a new git repository.
+       git init
+       git remote add origin <-link->
+       git remote -v            (To verify remote)
+       git branch               (To check branch)
+       git branch -M main       (To rename branch)
+       git push origin main
+       git checkout <- branch name ->       (To navigate )
+       git checkout -b <- new branch name->  (To create new branch)
+       git branch -d  <- branch name ->       (To delete branch )
+
+##           Merging Code 
+way 1:
+      git diff <- branch name->     (To compare commit,branches,files and more)
+      git merge <- branch name ->   (To merge 2 branches) 
+      
+way 2:
+      Create a PR(pull request)
+
+##             Pull Command
+used to fetch and download content from remote repo and immediately update the local repo to match that content.
+      git  pull origin main
+        #######################################
+
+##  Resolving Merge conflict
+ AN event that takes place when Git is unable to automatically resolve differences in code betweem two commits.
+  
+        ##########################################
+
+## Undoing Changes 
+Case 1:
+      Staged Changes 
+      git reset <-file name ->
+      git reset
+Case 2:
+       Commit Changes (for one commit)
+       git reset HEAD~1
+Case 3:
+      Commit changes (for many commits)
+      git reset <- commit hash ->
+      git reset --hard <- commit hash ->
+          
+       ###############################################
+
+##       To show all comment
+   git log
+
+        ###########################################
+
+##            Fork 
+1. A fork is a new repo that shares code and visibility settings with the original "upstream" repo.
+ 
+2. Fork is a rough copy
+-->
